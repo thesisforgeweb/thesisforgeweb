@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <style>
+      .doc-stroke { fill: none; stroke: #534AB7; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+      .doc-thin { fill: none; stroke: #534AB7; stroke-width: 1.1; stroke-linecap: round; stroke-linejoin: round; }
+      .ember { fill: #7F77DD; stroke: none; }
+      .ember-glow { fill: none; stroke: #7F77DD; stroke-width: 0.6; opacity: 0.3; }
+      .corner-detail { fill: none; stroke: #534AB7; stroke-width: 0.9; stroke-linecap: round; stroke-linejoin: round; opacity: 0.3; }
+    </style>
+  </defs>
+  <!-- Background -->
+  <rect width="32" height="32" rx="6" fill="#EEEDFE"/>
+  <!-- Document body -->
+  <path class="doc-stroke" d="M7 4a2.5 2.5 0 00-2.5 2.5v19a2.5 2.5 0 002.5 2.5h18a2.5 2.5 0 002.5-2.5V10l-5-6H7z"/>
+  <!-- Folded corner -->
+  <path class="doc-stroke" d="M19 4v4a2 2 0 002 2h4"/>
+  <!-- Corner fold shadow detail -->
+  <path class="corner-detail" d="M21 6.5l2.5 2.5"/>
+  <!-- Quill pen -->
+  <path d="M22 10L10 22" class="doc-stroke" stroke-width="1.8"/>
+  <!-- Quill feather barbs -->
+  <path d="M19.5 12.5l1.5-2" class="doc-thin" opacity="0.6"/>
+  <path d="M20.5 14l1-2.5" class="doc-thin" opacity="0.4"/>
+  <!-- Forge ember at writing point -->
+  <circle class="ember" cx="9" cy="23" r="1.4"/>
+  <!-- Ember glow ring -->
+  <circle class="ember-glow" cx="9" cy="23" r="2.2"/>
+  <!-- Written lines — centered in document body -->
+  <path d="M10 15h7.5" class="doc-thin"/>
+  <path d="M10 18h5.5" class="doc-thin" opacity="0.65"/>
+  <path d="M10 21h3.5" class="doc-thin" opacity="0.35"/>
+</svg>
